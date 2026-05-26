@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenneth Galorio — Frontend Developer & UI Designer</title>
+  <meta name="description" content="Portfolio of Kenneth Galorio, a frontend developer, multimedia artist, and campus journalist from Dapitan City, Philippines.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-content">
+    <div class="loader-ring"></div>
+    <span>Loading Portfolio</span>
+  </div>
+</div>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- Navigation -->
+<nav class="nav" id="navbar">
+  <a href="#" class="nav-logo">KG.</a>
+  <div class="nav-links" id="nav-links">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#certifications">Certs</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero" id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-gradient hero-gradient-1"></div>
+  <div class="hero-gradient hero-gradient-2"></div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="dot"></span> Available for custom projects
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm<br><span class="gradient-text">Kenneth Galorio</span>
+      </h1>
+      <div class="hero-subtitle">
+        I am a <span class="typing-text"></span><span class="typing-cursor">|</span>
+      </div>
+      <p class="hero-location">
+        <i class="fas fa-map-marker-alt"></i> Dapitan City, Zamboanga Peninsula, Philippines
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">Explore Projects</a>
+        <a href="#contact" class="btn btn-outline">Let's Connect</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-avatar-wrapper">
+        <div class="hero-avatar-ring"></div>
+        <div class="hero-orbit">
+          <div class="hero-orbit-icon"><i class="fab fa-html5"></i></div>
+          <div class="hero-orbit-icon"><i class="fab fa-css3-alt"></i></div>
+          <div class="hero-orbit-icon"><i class="fab fa-js"></i></div>
+          <div class="hero-orbit-icon"><i class="fab fa-react"></i></div>
+          <div class="hero-orbit-icon"><i class="fab fa-php"></i></div>
+          <div class="hero-orbit-icon"><i class="fab fa-laravel"></i></div>
+        </div>
+        <div class="hero-avatar">
+          <img src="assets/images/avatar.png" alt="Kenneth Galorio">
+        </div>
+      </div>
+      <div class="hero-float-card">
+        <i class="fas fa-code card-icon"></i>
+        <div class="card-text">
+          <div class="card-label">Developer</div>
+          <div class="card-value">10+ Projects</div>
+        </div>
+      </div>
+      <div class="hero-float-card">
+        <i class="fas fa-certificate card-icon"></i>
+        <div class="card-text">
+          <div class="card-label">Certified</div>
+          <div class="card-value">NCII Holder</div>
+        </div>
+      </div>
+      <div class="hero-float-card">
+        <i class="fas fa-pen-fancy card-icon"></i>
+        <div class="card-text">
+          <div class="card-label">Journalist</div>
+          <div class="card-value">RSPC Qualifier</div>
+        </div>
+      </div>
+      <div class="hero-float-card">
+        <i class="fas fa-video card-icon"></i>
+        <div class="card-text">
+          <div class="card-label">Broadcaster</div>
+          <div class="card-value">vMix & OBS</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll Down</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════ ABOUT (REDESIGNED LAYOUT) ═══════════ -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-image-col reveal">
+      <div class="about-profile-card">
+        <div class="about-image-box">
+          <img src="assets/images/pictureme.jpg" alt="Kenneth Galorio">
+          <div class="about-exp-badge">
+            <div class="num" data-count="10">0+</div>
+            <div class="label">Projects Completed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="about-text reveal">
+      <h3>About Me</h3>
+      <p>Hi, I'm Kenneth. I'm a frontend developer, multimedia artist, and campus journalist from Dapitan City. I'm a Senior High School graduate of Dapitan City National High School, where I spent most of my time building custom websites from the ground up.</p>
+      <p>Aside from coding, I do a lot of digital storytelling and live broadcasting. I'm the Former Chief Copy Editor for Insight PH, and I recently represented our school as a regional qualifier for the Regional Schools Press Conference (RSPC) in Region 9. Writing and editing have really helped me learn how to get my ideas across clearly.</p>
+      <p>I also hold an NCII certification. When I'm not typing code, you'll probably find me holding a camera, running the control room for a live broadcast, editing videos, or playing Sepak Takraw.</p>
+      <p>For me, a good project isn't just about code that works perfectly—it has to look great and be easy for people to use. I'm always trying out new tools and learning as much as I can to keep improving my skills in both frontend development and UI design.</p>
+      <div class="about-highlights">
+        <div class="highlight-item">
+          <div class="icon"><i class="fas fa-laptop-code"></i></div>
+          <div class="h-title">Web Development</div>
+          <div class="h-desc">Custom responsive architectures</div>
+        </div>
+        <div class="highlight-item">
+          <div class="icon"><i class="fas fa-palette"></i></div>
+          <div class="h-title">UI/UX Design</div>
+          <div class="h-desc">Modern interfaces & style guides</div>
+        </div>
+        <div class="highlight-item">
+          <div class="icon"><i class="fas fa-photo-film"></i></div>
+          <div class="h-title">Multimedia</div>
+          <div class="h-desc">High-quality editing & motion design</div>
+        </div>
+        <div class="highlight-item">
+          <div class="icon"><i class="fas fa-newspaper"></i></div>
+          <div class="h-title">Journalism</div>
+          <div class="h-desc">Press management & copy editing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ EXPERIENCE ═══════════ -->
+<section id="experience" class="section">
+  <div class="section-header reveal">
+    <div class="section-label">Professional Timeline</div>
+    <h2 class="section-title">Work Experience</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="exp-timeline">
+    <div class="exp-item reveal">
+      <div class="exp-dot"></div>
+      <div class="exp-content">
+        <h4>Frontend Developer & UI Designer</h4>
+        <p>Built custom websites, databases, and multi-user portals focusing on clean architecture and modern interfaces.</p>
+      </div>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-dot"></div>
+      <div class="exp-content">
+        <h4>Former Chief Copy Editor — Insight PH</h4>
+        <p>Managed content editing and publication for Insight PH with a sharp eye for detail and high standards of accuracy.</p>
+      </div>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-dot"></div>
+      <div class="exp-content">
+        <h4>Multimedia Artist</h4>
+        <p>Produced custom video assets, vector layouts, promotional material, and motion graphics utilizing Adobe Creative Cloud.</p>
+      </div>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-dot"></div>
+      <div class="exp-content">
+        <h4>Broadcast Cameraman</h4>
+        <p>Operated production-grade camera setups and structured seamless live broadcasts with vMix and OBS Studio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SKILLS (CIRCULAR GAUGE CARDS) ═══════════ -->
+<section id="skills" class="section">
+  <div class="section-header reveal">
+    <div class="section-label">Skill Ratings</div>
+    <h2 class="section-title">Technical Expertise</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="skills-categories">
+
+    <!-- HTML5 & CSS3 -->
+    <div class="skill-gauge-card reveal" style="--gauge-color: #22c55e;">
+      <div class="skill-gauge">
+        <svg viewBox="0 0 90 90"><circle class="skill-gauge-bg" cx="45" cy="45" r="40"/><circle class="skill-gauge-fill" cx="45" cy="45" r="40" data-pct="95" stroke="#22c55e"/></svg>
+        <div class="skill-gauge-value">95%</div>
+      </div>
+      <div class="skill-gauge-label">HTML5 & CSS3</div>
+      <div class="skill-gauge-sub">Markup & Styling</div>
+    </div>
+
+    <!-- JavaScript & jQuery -->
+    <div class="skill-gauge-card reveal" style="--gauge-color: #22c55e;">
+      <div class="skill-gauge">
+        <svg viewBox="0 0 90 90"><circle class="skill-gauge-bg" cx="45" cy="45" r="40"/><circle class="skill-gauge-fill" cx="45" cy="45" r="40" data-pct="92" stroke="#22c55e"/></svg>
+        <div class="skill-gauge-value">92%</div>
+      </div>
+      <div class="skill-gauge-label">JavaScript & jQuery</div>
+      <div class="skill-gauge-sub">Interactivity</div>
+    </div>
+
+    <!-- Tailwind & Bootstrap -->
+    <div class="skill-gauge-card reveal" style="--gauge-color: #22c55e;">
+      <div class="skill-gauge">
+        <svg viewBox="0 0 90 90"><circle class="skill-gauge-bg" cx="45" cy="45" r="40"/><circle class="skill-gauge-fill" cx="45" cy="45" r="40" data-pct="90" stroke="#22c55e"/></svg>
+        <div class="skill-gauge-value">90%</div>
+      </div>
+      <div class="skill-gauge-label">Tailwind & Bootstrap</div>
+      <div class="skill-gauge-sub">CSS Frameworks</div>
+    </div>
+
+    <!-- PHP & MySQL -->
+    <div class="skill-gauge-card reveal" style="--gauge-color: #38bdf8;">
+      <div class="skill-gauge">
+        <svg viewBox="0 0 90 90"><circle class="skill-gauge-bg" cx="45" cy="45" r="40"/><circle class="skill-gauge-fill" cx="45" cy="45" r="40" data-pct="88" stroke="#38bdf8"/></svg>
+        <div class="skill-gauge-value">88%</div>
+      </div>
+      <div class="skill-gauge-label">PHP & MySQL</div>
+      <div class="skill-gauge-sub">Backend</div>
+    </div>
+
+    <!-- Laravel -->
+    <div class="skill-gauge-card reveal" style="--gauge-color: #38bdf8;">
+      <div class="skill-gauge">
+        <svg viewBox="0 0 90 90"><circle class="skill-gauge-bg" cx="45" cy="45" r="40"/><circle class="skill-gauge-fill" cx="45" cy="45" r="40" data-pct="85" stroke="#38bdf8"/></svg>
+        <div class="skill-gauge-value">85%</div>
+      </div>
+      <div class="skill-gauge-label">Laravel</div>
+      <div class="skill-gauge-sub">Framework</div>
+    </div>
+
+    <!-- React & Node.js -->
+    <div class="skill-gauge-card reveal" style="--gauge-color: #38bdf8;">
+      <div class="skill-gauge">
+        <svg viewBox="0 0 90 90"><circle class="skill-gauge-bg" cx="45" cy="45" r="40"/><circle class="skill-gauge-fill" cx="45" cy="45" r="40" data-pct="82" stroke="#38bdf8"/></svg>
+        <div class="skill-gauge-value">82%</div>
+      </div>
+      <div class="skill-gauge-label">React & Node.js</div>
+      <div class="skill-gauge-sub">Full Stack</div>
+    </div>
+
+    <!-- vMix Production -->
+    <div class="skill-gauge-card reveal" style="--gauge-color: #6c5ce7;">
+      <div class="skill-gauge">
+        <svg viewBox="0 0 90 90"><circle class="skill-gauge-bg" cx="45" cy="45" r="40"/><circle class="skill-gauge-fill" cx="45" cy="45" r="40" data-pct="95" stroke="#6c5ce7"/></svg>
+        <div class="skill-gauge-value">95%</div>
+      </div>
+      <div class="skill-gauge-label">vMix Production</div>
+      <div class="skill-gauge-sub">Broadcast</div>
+    </div>
+
+    <!-- OBS Studio -->
+    <div class="skill-gauge-card reveal" style="--gauge-color: #6c5ce7;">
+      <div class="skill-gauge">
+        <svg viewBox="0 0 90 90"><circle class="skill-gauge-bg" cx="45" cy="45" r="40"/><circle class="skill-gauge-fill" cx="45" cy="45" r="40" data-pct="92" stroke="#6c5ce7"/></svg>
+        <div class="skill-gauge-value">92%</div>
+      </div>
+      <div class="skill-gauge-label">OBS Studio</div>
+      <div class="skill-gauge-sub">Streaming</div>
+    </div>
+
+    <!-- Control Room Ops -->
+    <div class="skill-gauge-card reveal" style="--gauge-color: #6c5ce7;">
+      <div class="skill-gauge">
+        <svg viewBox="0 0 90 90"><circle class="skill-gauge-bg" cx="45" cy="45" r="40"/><circle class="skill-gauge-fill" cx="45" cy="45" r="40" data-pct="90" stroke="#6c5ce7"/></svg>
+        <div class="skill-gauge-value">90%</div>
+      </div>
+      <div class="skill-gauge-label">Control Room Ops</div>
+      <div class="skill-gauge-sub">Operations</div>
+    </div>
+
+    <!-- Camera Ops -->
+    <div class="skill-gauge-card reveal" style="--gauge-color: #38bdf8;">
+      <div class="skill-gauge">
+        <svg viewBox="0 0 90 90"><circle class="skill-gauge-bg" cx="45" cy="45" r="40"/><circle class="skill-gauge-fill" cx="45" cy="45" r="40" data-pct="85" stroke="#38bdf8"/></svg>
+        <div class="skill-gauge-value">85%</div>
+      </div>
+      <div class="skill-gauge-label">Camera Ops</div>
+      <div class="skill-gauge-sub">Video Capture</div>
+    </div>
+
+    <!-- Adobe Photoshop -->
+    <div class="skill-gauge-card reveal" style="--gauge-color: #38bdf8;">
+      <div class="skill-gauge">
+        <svg viewBox="0 0 90 90"><circle class="skill-gauge-bg" cx="45" cy="45" r="40"/><circle class="skill-gauge-fill" cx="45" cy="45" r="40" data-pct="80" stroke="#38bdf8"/></svg>
+        <div class="skill-gauge-value">80%</div>
+      </div>
+      <div class="skill-gauge-label">Adobe Photoshop</div>
+      <div class="skill-gauge-sub">Raster Editing</div>
+    </div>
+
+    <!-- Premiere Pro -->
+    <div class="skill-gauge-card reveal" style="--gauge-color: #eab308;">
+      <div class="skill-gauge">
+        <svg viewBox="0 0 90 90"><circle class="skill-gauge-bg" cx="45" cy="45" r="40"/><circle class="skill-gauge-fill" cx="45" cy="45" r="40" data-pct="70" stroke="#eab308"/></svg>
+        <div class="skill-gauge-value">70%</div>
+      </div>
+      <div class="skill-gauge-label">Premiere Pro</div>
+      <div class="skill-gauge-sub">Video Editing</div>
+    </div>
+
+    <!-- Canva & Layouts -->
+    <div class="skill-gauge-card reveal" style="--gauge-color: #eab308;">
+      <div class="skill-gauge">
+        <svg viewBox="0 0 90 90"><circle class="skill-gauge-bg" cx="45" cy="45" r="40"/><circle class="skill-gauge-fill" cx="45" cy="45" r="40" data-pct="65" stroke="#eab308"/></svg>
+        <div class="skill-gauge-value">65%</div>
+      </div>
+      <div class="skill-gauge-label">Canva & Layouts</div>
+      <div class="skill-gauge-sub">Graphic Design</div>
+    </div>
+
+    <!-- After Effects -->
+    <div class="skill-gauge-card reveal" style="--gauge-color: #a855f7;">
+      <div class="skill-gauge">
+        <svg viewBox="0 0 90 90"><circle class="skill-gauge-bg" cx="45" cy="45" r="40"/><circle class="skill-gauge-fill" cx="45" cy="45" r="40" data-pct="53" stroke="#a855f7"/></svg>
+        <div class="skill-gauge-value">53%</div>
+      </div>
+      <div class="skill-gauge-label">After Effects</div>
+      <div class="skill-gauge-sub">Motion Graphics</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════ PROJECTS ═══════════ -->
+<section id="projects" class="section">
+  <div class="section-header reveal">
+    <div class="section-label">Selected Works</div>
+    <h2 class="section-title">Case Studies & Projects</h2>
+    <p class="section-desc">Explore a portfolio of platforms, management portals, and client websites designed and developed from scratch.</p>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="projects-tabs reveal">
+    <button class="projects-tab active" data-proj-filter="all">All Projects</button>
+    <button class="projects-tab" data-proj-filter="international">International</button>
+    <button class="projects-tab" data-proj-filter="local">Local Portals</button>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- Soccer Bar Party -->
+    <div class="project-card reveal" data-proj-cat="international">
+      <div class="project-image">
+        <img src="assets/images/projects/SoccerBarPartyCover.png" alt="Soccer Bar Party">
+        <div class="project-image-overlay">
+          <button class="project-overlay-btn">View Details <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-tag"><i class="fas fa-globe"></i> International Client</div>
+        <h3>Soccer Bar Party</h3>
+        <p>An interactive, highly engaging digital experience created to connect soccer fans and maximize bar event participation.</p>
+        <div class="project-tech-stack">
+          <span class="project-tech">HTML5</span>
+          <span class="project-tech">CSS3</span>
+          <span class="project-tech">Tailwind CSS</span>
+          <span class="project-tech">JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dapitan City NHS -->
+    <div class="project-card reveal" data-proj-cat="local">
+      <div class="project-image">
+        <img src="assets/images/projects/DapitanCityNHSCover.png" alt="Dapitan City NHS">
+        <div class="project-image-overlay">
+          <button class="project-overlay-btn">View Details <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-tag"><i class="fas fa-school"></i> School System</div>
+        <h3>Dapitan City NHS</h3>
+        <p>A multi-role secure portal developed for students, faculty, and administrative staff to optimize school processes.</p>
+        <div class="project-tech-stack">
+          <span class="project-tech">Laravel</span>
+          <span class="project-tech">PHP</span>
+          <span class="project-tech">MySQL</span>
+          <span class="project-tech">Bootstrap</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Land Network -->
+    <div class="project-card reveal" data-proj-cat="local">
+      <div class="project-image">
+        <img src="assets/images/projects/LandnetworkCover.png" alt="Land Network">
+        <div class="project-image-overlay">
+          <button class="project-overlay-btn">View Details <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-tag"><i class="fas fa-network-wired"></i> Web App</div>
+        <h3>Land Network</h3>
+        <p>A powerful networking platform equipped with commission wallets, dynamic dashboard metrics, and referral systems.</p>
+        <div class="project-tech-stack">
+          <span class="project-tech">React</span>
+          <span class="project-tech">Laravel</span>
+          <span class="project-tech">RESTful API</span>
+          <span class="project-tech">MySQL</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Figura Books -->
+    <div class="project-card reveal" data-proj-cat="local">
+      <div class="project-image">
+        <img src="assets/images/projects/FiguraBooksCover.png" alt="Figura Books">
+        <div class="project-image-overlay">
+          <button class="project-overlay-btn">View Details <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-tag"><i class="fas fa-book-open"></i> Creator Platform</div>
+        <h3>Figura Books</h3>
+        <p>A dedicated platform for a literary publisher, streamlining global book rights assessment, republishing applications, and marketing campaign showcases.</p>
+        <div class="project-tech-stack">
+          <span class="project-tech">PHP</span>
+          <span class="project-tech">MySQL</span>
+          <span class="project-tech">Bootstrap</span>
+          <span class="project-tech">JS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidlak.ph -->
+    <div class="project-card reveal" data-proj-cat="local">
+      <div class="project-image">
+        <img src="assets/images/projects/Sidlak.ph.png" alt="Sidlak.ph">
+        <div class="project-image-overlay">
+          <button class="project-overlay-btn">View Details <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-tag"><i class="fas fa-running"></i> Event Manager</div>
+        <h3>Sidlak.ph</h3>
+        <p>An intuitive booking and management system designed to coordinate local athletic fun run events and merchandise services.</p>
+        <div class="project-tech-stack">
+          <span class="project-tech">Vite</span>
+          <span class="project-tech">Laravel</span>
+          <span class="project-tech">PHP</span>
+          <span class="project-tech">MySQL</span>
+          <span class="project-tech">JS</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════ GALLERY ═══════════ -->
+<section id="gallery" class="section">
+  <div class="section-header reveal">
+    <div class="section-label">Graphic Works</div>
+    <h2 class="section-title">UI & Visual Design Gallery</h2>
+    <p class="section-desc">A selection of branding concepts, esport posters, layout structures, and graphic design projects.</p>
+    <div class="section-line"></div>
+  </div>
+  <div class="gallery-tabs reveal">
+    <button class="gallery-tab active" data-filter="all">All Works</button>
+    <button class="gallery-tab" data-filter="logo">Logo Identities</button>
+    <button class="gallery-tab" data-filter="poster">Posters & Layouts</button>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item reveal" data-category="logo">
+      <img src="assets/images/gallery/ReneAutoPaint&amp;BodyShop.png" alt="Rene Auto Paint and Body Shop">
+      <div class="gallery-item-overlay"><span>Rene Auto Paint<br>&amp; Body Shop</span></div>
+    </div>
+    <div class="gallery-item reveal" data-category="logo">
+      <img src="assets/images/gallery/IntegratedCyberTribeOrg.png" alt="Integrated Cyber Tribe Org">
+      <div class="gallery-item-overlay"><span>Integrated Cyber<br>Tribe Org</span></div>
+    </div>
+    <div class="gallery-item reveal" data-category="logo">
+      <img src="assets/images/gallery/EsportsIntramuralsLogos.png" alt="Esports Intramurals Logos">
+      <div class="gallery-item-overlay"><span>Esports Intramurals<br>Logos</span></div>
+    </div>
+    <div class="gallery-item reveal" data-category="poster">
+      <img src="assets/images/gallery/EsportsGrandFinalPoster.png" alt="Esports Grand Final Poster">
+      <div class="gallery-item-overlay"><span>Esports Grand<br>Final Poster</span></div>
+    </div>
+    <div class="gallery-item reveal" data-category="poster">
+      <img src="assets/images/gallery/CommencementLEDWallVisuals.png" alt="Commencement LED Wall Visuals">
+      <div class="gallery-item-overlay"><span>Commencement<br>LED Wall Visuals</span></div>
+    </div>
+    <div class="gallery-item reveal" data-category="poster">
+      <img src="assets/images/gallery/Hiraya1stBirthdayUnicornTarpaulin.png" alt="Hiraya 1st Birthday Tarpaulin">
+      <div class="gallery-item-overlay"><span>Hiraya 1st Birthday<br>Unicorn Tarpaulin</span></div>
+    </div>
+    <div class="gallery-item reveal" data-category="poster">
+      <img src="assets/images/gallery/SeoToolsWritingPlanPricing.png" alt="SeoTools Writing Plan">
+      <div class="gallery-item-overlay"><span>SeoTools Writing<br>Plan Pricing</span></div>
+    </div>
+    <div class="gallery-item reveal" data-category="poster">
+      <img src="assets/images/gallery/SeoToolsAdvancePlanPricing.png" alt="SeoTools Advance Plan">
+      <div class="gallery-item-overlay"><span>SeoTools Advance<br>Plan Pricing</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CERTIFICATIONS ═══════════ -->
+<section id="certifications" class="section">
+  <div class="section-header reveal">
+    <div class="section-label">Official Credentials</div>
+    <h2 class="section-title">Certifications & Awards</h2>
+    <p class="section-desc">Recognitions of academic merit, technical excellence, and journalistic achievements.</p>
+    <div class="section-line"></div>
+  </div>
+  <div class="certs-grid">
+    <div class="cert-card reveal">
+      <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+      <h4>Advanced IT Troubleshooting</h4>
+      <p>Udemy Professional Training</p>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-icon"><i class="fas fa-terminal"></i></div>
+      <h4>C++ Programming</h4>
+      <p>Saylor Academy CS107</p>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-icon"><i class="fas fa-pen-nib"></i></div>
+      <h4>Fundamentals of Journalism</h4>
+      <p>NBCU Academy Program</p>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-icon"><i class="fas fa-users-viewfinder"></i></div>
+      <h4>JournCamp+ Press Summit</h4>
+      <p>Explained PH Credentials</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CONTACT (HIGH-TECH FORM PANEL) ═══════════ -->
+<section id="contact">
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <h3>Let's Work Together</h3>
+      <p>Have an upcoming system to build, user interfaces to refine, or general web inquiries? Reach out and we can schedule a professional consultation.</p>
+      <div class="contact-details">
+        <div class="contact-item">
+          <div class="c-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="c-text">
+            <span>Address</span>
+            <p>Dapitan City, Zamboanga Peninsula, Philippines</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="c-icon"><i class="fas fa-phone"></i></div>
+          <div class="c-text">
+            <span>Direct Call</span>
+            <a href="tel:+639700650385">+63 970 065 0385</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="c-icon"><i class="fas fa-envelope"></i></div>
+          <div class="c-text">
+            <span>Personal Email</span>
+            <a href="mailto:kennethgalorioph@gmail.com">kennethgalorioph@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="c-icon"><i class="fas fa-briefcase"></i></div>
+          <div class="c-text">
+            <span>Professional Inquiry</span>
+            <a href="mailto:kennethgalorioph@gmail.com">kennethgalorioph@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://facebook.com/kennndev" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/kennndev" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/639700650385" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://t.me/kennethDev01" class="social-link" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram-plane"></i></a>
+      </div>
+    </div>
+    
+    <div class="contact-form reveal">
+      <form id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <i class="fas fa-envelope"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <select name="service" required>
+            <option value="" disabled selected>Select Service Segment</option>
+            <option value="web-development">Frontend / Database Development</option>
+            <option value="uiux-design">UI/UX Interface Design</option>
+            <option value="live-streaming">vMix / OBS Broadcast Streaming</option>
+            <option value="multimedia-production">Multimedia & Video Production</option>
+          </select>
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="form-group">
+          <textarea name="message" rows="5" placeholder="Your Message Content" required></textarea>
+          <i class="fas fa-comment-alt"></i>
+        </div>
+        <button type="submit" class="btn-submit">
+          <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2026 Kenneth Galorio. All rights reserved.</p>
+</footer>
+
+<!-- Three.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+
+<!-- Gallery & Project Filter Script -->
+<script>
+  // Project Filtering
+  document.querySelectorAll('[data-proj-filter]').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('[data-proj-filter]').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const filter = tab.dataset.projFilter;
+      document.querySelectorAll('[data-proj-cat]').forEach(item => {
+        if (filter === 'all' || item.dataset.projCat === filter) {
+          item.style.display = 'flex';
+          item.style.animation = 'fadeIn .4s ease forwards';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Gallery Filtering
+  document.querySelectorAll('.gallery-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.gallery-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const filter = tab.dataset.filter;
+      document.querySelectorAll('.gallery-item').forEach(item => {
+        if (filter === 'all' || item.dataset.category === filter) {
+          item.style.display = '';
+          item.style.animation = 'fadeIn .4s ease forwards';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // ─── LIGHTBOX FUNCTIONALITY ───
+  const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  const closeBtn = document.querySelector('.lightbox-close');
+  const prevBtn = document.querySelector('.lightbox-nav.prev');
+  const nextBtn = document.querySelector('.lightbox-nav.next');
+  let currentIdx = 0;
+
+  function showImage(idx) {
+    if (idx < 0) idx = galleryItems.length - 1;
+    if (idx >= galleryItems.length) idx = 0;
+    currentIdx = idx;
+
+    const img = galleryItems[currentIdx].querySelector('img');
+    const title = galleryItems[currentIdx].querySelector('.gallery-item-overlay span').innerHTML;
+    
+    lightboxImg.style.opacity = 0;
+    setTimeout(() => {
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightboxCaption.innerHTML = title;
+      lightboxImg.style.opacity = 1;
+    }, 150);
+  }
+
+  galleryItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      showImage(index);
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+
+  prevBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    showImage(currentIdx - 1);
+  });
+
+  nextBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    showImage(currentIdx + 1);
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox || e.target.classList.contains('lightbox-content')) {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    } else if (e.key === 'ArrowLeft') {
+      showImage(currentIdx - 1);
+    } else if (e.key === 'ArrowRight') {
+      showImage(currentIdx + 1);
+    }
+  });
+</script>
+
+<!-- ═══════════ LIGHTBOX MODAL ═══════════ -->
+<div id="lightbox" class="lightbox">
+  <button class="lightbox-close" aria-label="Close Lightbox"><i class="fas fa-times"></i></button>
+  <button class="lightbox-nav prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+  <button class="lightbox-nav next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="Enlarged Work">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+</div>
+
+<style>
+  @keyframes fadeIn { from { opacity:0; transform:scale(.95); } to { opacity:1; transform:scale(1); } }
+</style>
+
+</body>
+</html>
