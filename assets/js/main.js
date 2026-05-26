@@ -233,16 +233,37 @@ window.addEventListener('load', () => {
 (() => {
   const form = document.getElementById('contact-form');
   if (!form) return;
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
     const btn = form.querySelector('.btn-submit');
-    btn.innerHTML = '<span>Message Sent! ✓</span> <i class="fas fa-check"></i>';
-    btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+    
+    btn.innerHTML = '<span>Sending...</span> <i class="fas fa-spinner fa-spin"></i>';
+    
+    try {
+      const response = await fetch(form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+            'Accept': 'application/json'
+        }
+      });
+      
+      if (response.ok) {
+        btn.innerHTML = '<span>Message Sent! ✓</span> <i class="fas fa-check"></i>';
+        btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+        form.reset();
+      } else {
+        throw new Error('Failed');
+      }
+    } catch (error) {
+      btn.innerHTML = '<span>Error Sending</span> <i class="fas fa-exclamation-triangle"></i>';
+      btn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+    }
+    
     setTimeout(() => {
       btn.innerHTML = '<span>Send Message</span> <i class="fas fa-paper-plane"></i>';
       btn.style.background = '';
-      form.reset();
-    }, 3000);
+    }, 4000);
   });
 })();
 
